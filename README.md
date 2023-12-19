@@ -78,4 +78,4 @@ Para subir a api execute o comando <node ace serve --watch>
 
 Rafael Bordignon - Dev FullStack
 
-## 😄 Agradeço a oportunidade, espero em breve fazer parte desse incrível time! 
+## 😄 Agradeço a oportunidade, espero em breve fazer parte desse time incrível! 
