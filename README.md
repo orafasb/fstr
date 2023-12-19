@@ -48,6 +48,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 - Você instalou a versão mais recente de `<linguagem / dependência / requeridos>`
 - Você tem uma máquina `<Windows / Linux / Mac>`.
+- Você deve instalar o SQLite Viewer no Vscode para poder visualizar os dados do banco de dados.
 
 ## 🚀 Instalando <faster_project>
 
