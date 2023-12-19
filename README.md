@@ -7,7 +7,30 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> Projeto para vaga FullStack developer
+> Requisitos técnicos do Backend( API )
+O Backend deverá ser desenvolvido em NodeJS(AdonisJS 5, NestJS, Express)!! 🙌
+
+Obrigatórios
+Criar documentação assertiva para a execução e apresentação do projeto no README;
+Utilizar typescript;
+Criar nome para aplicação;
+Tratamento de erros e exceções da API;( 500, 400 )
+Fácil de buildar e executar a aplicação para testes
+Banco de dados MySql ou Postgress
+
+Opcionais
+Escrever testes;
+Documentação da API ( Swagger ou similar)
+Diferenciais
+Documentar decisões tomadas durante o desafio técnico.
+Codigo bem escrito e desacoplado;
+Criar commits semânticos.
+Diagrama do banco de dados
+Deploy da API
+Docker
+Observação
+Utilizar AdonisJS 5
 
 ### Ajustes e melhorias
 
