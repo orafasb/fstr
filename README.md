@@ -7,40 +7,40 @@
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
 
 
-> Projeto para vaga FullStack developer
-> Requisitos técnicos do Backend( API )
-O Backend deverá ser desenvolvido em NodeJS(AdonisJS 5, NestJS, Express)!! 🙌
+> Projeto para vaga FullStack developer desenvolvido em NodeJS com AdonisJS 5!! 🙌
 
-Obrigatórios
-Criar documentação assertiva para a execução e apresentação do projeto no README;
-Utilizar typescript;
-Criar nome para aplicação;
-Tratamento de erros e exceções da API;( 500, 400 )
-Fácil de buildar e executar a aplicação para testes
-Banco de dados MySql ou Postgress
+ Obrigatórios
+- Criar documentação assertiva para a execução e apresentação do projeto no README;
+- Utilizar typescript;
+- Criar nome para aplicação;
+- Tratamento de erros e exceções da API;( 500, 400 )
+- Fácil de buildar e executar a aplicação para testes
+- Banco de dados MySql ou Postgress
 
 Opcionais
-Escrever testes;
-Documentação da API ( Swagger ou similar)
-Diferenciais
-Documentar decisões tomadas durante o desafio técnico.
-Codigo bem escrito e desacoplado;
-Criar commits semânticos.
-Diagrama do banco de dados
-Deploy da API
-Docker
-Observação
-Utilizar AdonisJS 5
+- Escrever testes;
+- Documentação da API ( Swagger ou similar)
+- Diferenciais
+- Documentar decisões tomadas durante o desafio técnico.
+- Codigo bem escrito e desacoplado;
+- Criar commits semânticos.
+- Diagrama do banco de dados
+- Deploy da API
+- Docker
+
 
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [x] Tarefa 1
-- [x] Tarefa 2
-- [x] Tarefa 3
-- [ ] Tarefa 4
-- [ ] Tarefa 5
+- [x] Criação do Projeto
+- [x] Criar documentação 
+- [x] Banco de dados SQL Ligth
+- [ ] Desencolvimento do código
+- [ ] Tratamento de erros e exceções da API;( 500, 400 )
+- [ ] Escrever testes
+- [ ] swagger
+- [ ] Documentar decisões tomadas durante o desafio técnico.
 
 ## 💻 Pré-requisitos
 
