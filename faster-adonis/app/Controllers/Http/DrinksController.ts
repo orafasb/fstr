@@ -10,6 +10,7 @@ export default class DrinksController {
   }
 
   public async store({ request, response }: HttpContextContract) {
+    try {
     const body = request.body()
     const image = request.file('image', this.validationOptions)
     if (image) {
@@ -18,13 +19,25 @@ export default class DrinksController {
         name: imageName,
       })
       body.image = imageName
+      const drink = await Drink.create(body)
+      response.status(201)
+      return {
+        message: 'Bebida cadastrada com sucesso',
+        data: drink,
+      }
+    }else {
+      response.status(400)
+      return {
+        message: 'Você precisa enviar uma imagem',
+      }
     }
-    const drink = await Drink.create(body)
-    response.status(201)
+    } catch (error) {
+      response.status(500)
     return {
-      message: 'Bebida cadastrada com sucesso',
-      data: drink,
+      message: `${error}`,
+        }
     }
+    
   }
   public async index() {
     const drinks = await Drink.all()
@@ -46,13 +59,20 @@ export default class DrinksController {
       data: drink,
     }
   }
-  public async update({ params, request }: HttpContextContract) {
+  public async update({ params, request, response }: HttpContextContract) {
+    try {  
     const body = request.body()
     const drink = await Drink.findOrFail(params.id)
-    drink.name = body.name
-    drink.category = body.category
-    drink.description = body.description
-
+    if(body.name){
+      drink.name = body.name
+    }
+    if(body.category){
+      drink.category = body.category
+    }
+    if(body.description){
+      drink.description = body.description
+    }
+    
     if (drink.image !== body.image || !drink.image) {
       const image = request.file('image', this.validationOptions)
       if (image) {
@@ -63,11 +83,18 @@ export default class DrinksController {
         drink.image = imageName
       }
     }
-
     await drink.save()
+    response.status(200)
     return {
       message: 'Bebida atualizada com sucesso',
       data: drink,
     }
+    } catch (error) {
+      response.status(500)
+      return {
+        message: error
+      }
+    }
+    
   }
 }
