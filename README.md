@@ -36,8 +36,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Criação do Projeto
 - [x] Criar documentação 
 - [x] Banco de dados SQL Ligth
-- [ ] Desencolvimento do código
-- [ ] Tratamento de erros e exceções da API;( 500, 400 )
+- [x] Desenvolvimento do código
+- [x] Tratamento de erros e exceções da API;( 500, 400 )
+- [ ] Melhorias
 - [ ] Escrever testes
 - [ ] swagger
 - [ ] Documentar decisões tomadas durante o desafio técnico.
